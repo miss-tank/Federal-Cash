@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Übernehmen">
+        </Button>
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Abbrechen">
+        </Button>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_below="@+id/LinearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EnterDate !"
+        android:layout_marginTop="2dp"
+        android:id="@+id/EnterDate"/>
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/EnterDate"
+        android:id="@+id/UserInput"
+
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly Cash "
+        android:id="@+id/MonthlyCash"
+        android:layout_below="@+id/UserInput"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Cash"
+        android:id="@+id/DailyCashButton"
+        android:layout_below="@+id/MonthlyCash"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yearly Avg"
+        android:id="@+id/YearlyAvg"
+        android:layout_below="@+id/DailyCashButton"
+        />
+
+    <ListView
+        android:layout_below="@+id/YearlyAvg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/history_view" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="Clear Previous Data"
+        android:id="@+id/prevDataClear"/>
+
+</RelativeLayout>
